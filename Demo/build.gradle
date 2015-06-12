@@ -1,0 +1,39 @@
+apply plugin: 'com.android.application'
+
+repositories {
+    mavenCentral()
+}
+
+android {
+    compileSdkVersion 13
+    buildToolsVersion "22.0.1"
+
+    defaultConfig {
+        applicationId "com.keyes.youtube.demo"
+        minSdkVersion 4
+        targetSdkVersion 22
+        versionName "1.0"
+        versionCode 1
+    }
+
+    buildTypes {
+        debug {
+            applicationIdSuffix ".debug"
+            versionNameSuffix "-debug"
+        }
+
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
+        }
+    }
+
+    // This is important, it will run lint checks but won't abort build
+    lintOptions {
+        abortOnError false
+    }
+
+    dependencies {
+        compile project(':YoutubePlayer')
+    }
+}

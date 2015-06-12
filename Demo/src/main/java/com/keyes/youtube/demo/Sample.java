@@ -1,4 +1,4 @@
-package com.keyes.youtube;
+package com.keyes.youtube.demo;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -7,6 +7,9 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
+
+import com.keyes.youtube.OpenYouTubePlayerActivity;
+import com.keyes.youtube.demo.R;
 
 public class Sample extends Activity {
 

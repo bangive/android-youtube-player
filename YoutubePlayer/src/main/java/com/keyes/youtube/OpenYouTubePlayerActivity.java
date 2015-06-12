@@ -418,6 +418,8 @@ public class OpenYouTubePlayerActivity extends Activity {
 					throw new RuntimeException("Invalid NULL Url.");
 				}
 				
+				Log.i(this.getClass().getSimpleName(), pResult.toString());
+				
 			    mVideoView.setVideoURI(pResult);
 			    
 				if(isCancelled())
