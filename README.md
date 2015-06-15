@@ -1,5 +1,5 @@
 # Android Youtube Player
-***Android Youtube Player*** provides an easay way to play a Youtube video in your Android application.
+***Android Youtube Player*** provides an easy way to play a Youtube video in your Android application.
 
 Setup
 --------------------
