@@ -29,10 +29,9 @@
         <!-- the OpenYouTubeActivity in your project                         -->
         <!-- =============================================================== -->
         <activity
-                android:name="com.booknara.youtube.OpenYouTubePlayerActivity"
-                android:screenOrientation="landscape"
-                android:configChanges="orientation" >
-        </activity> 
+            android:name="com.booknara.youtube.OpenYouTubePlayerActivity"
+            android:configChanges="orientation" >
+        </activity>
 
     </application>
 

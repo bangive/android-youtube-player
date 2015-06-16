@@ -1,13 +1,30 @@
 # Android Youtube Player
 Android Youtube Player provides an easy way to play a Youtube video in your Android application.
 
-Usage
------
-TBA
+## Usage
 
+### 1. Add OpenYouTubeActivity activity declaration in your AndroidManifest.xml
+```xml
+<activity
+    android:name="com.booknara.youtube.OpenYouTubePlayerActivity"
+    android:configChanges="orientation" >
+</activity>
+```
 
-Download
---------
+### 2. Add two permissions in your AndroidManifest.xml
+```xml
+<uses-permission android:name="android.permission.INTERNET" />
+<uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+```
+
+### 3. Call OpenYoutubePlayerActivity in your activity or fragment
+```java
+Intent videoIntent = new Intent(null, Uri.parse("ytv://" + YOUTUBE_VIDEO_ID), this, OpenYouTubePlayerActivity.class);
+startActivity(videoIntent);
+```
+
+## Download
+
 You can depend on the library through Maven:
 ```xml
 <dependency>
@@ -21,14 +38,12 @@ or Gradle:
 compile 'com.booknara:android-youtube-player:1.0.0@aar'
 ```
 
-Acknowledgements
---------------------
+## Acknowledgements
 
 * Thanks to all developers and contributers for [android-youtube-player][1] project.
 
 
-License
--------
+## License
 
     Copyright 2015 Daehee Han
 
