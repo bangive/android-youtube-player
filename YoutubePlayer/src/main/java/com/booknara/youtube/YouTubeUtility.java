@@ -1,4 +1,4 @@
-package com.keyes.youtube;
+package com.booknara.youtube;
 
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
@@ -46,19 +46,16 @@ public class YouTubeUtility {
 
 		HttpClient lClient = new DefaultHttpClient();
 		
-		HttpGet lGetMethod = new HttpGet(OpenYouTubePlayerActivity.YOUTUBE_PLAYLIST_ATOM_FEED_URL + 
+		HttpGet lGetMethod = new HttpGet(OpenYouTubePlayerActivity.YOUTUBE_PLAYLIST_ATOM_FEED_URL +
 										 pPlaylistId.getId()+"?v=2&max-results=50&alt=json");
 		
-		HttpResponse lResp = null;
-
-		lResp = lClient.execute(lGetMethod);
+		HttpResponse lResp = lClient.execute(lGetMethod);
 		
 		ByteArrayOutputStream lBOS = new ByteArrayOutputStream();
 		String lInfoStr = null;
 		JSONObject lYouTubeResponse = null;
 		
 		try {
-			
 			lResp.getEntity().writeTo(lBOS);
 			lInfoStr = lBOS.toString("UTF-8");
 			lYouTubeResponse = new JSONObject(lInfoStr);
@@ -66,7 +63,7 @@ public class YouTubeUtility {
 			 JSONArray lEntryArr = lYouTubeResponse.getJSONObject("feed").getJSONArray("entry");
 			 JSONArray lLinkArr = lEntryArr.getJSONObject(lEntryArr.length()-1).getJSONArray("link");
 			for(int i=0; i<lLinkArr.length(); i++){
-				JSONObject lLinkObj = lLinkArr.getJSONObject(i);;
+				JSONObject lLinkObj = lLinkArr.getJSONObject(i);
 				String lRelVal = lLinkObj.optString("rel", null);
 				if( lRelVal != null && lRelVal.equals("alternate")){
 					
@@ -115,10 +112,9 @@ public class YouTubeUtility {
 		lResp = lClient.execute(lGetMethod);
 			
 		ByteArrayOutputStream lBOS = new ByteArrayOutputStream();
-		String lInfoStr = null;
-			
+
 		lResp.getEntity().writeTo(lBOS);
-		lInfoStr = new String(lBOS.toString("UTF-8"));
+        String lInfoStr = lBOS.toString("UTF-8");
 		
 		String[] lArgs=lInfoStr.split("&");
 		Map<String,String> lArgMap = new HashMap<String, String>();

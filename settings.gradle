@@ -1,1 +1,1 @@
-include ':Demo', ':YoutubePlayer'
+include ':Sample', ':YoutubePlayer'

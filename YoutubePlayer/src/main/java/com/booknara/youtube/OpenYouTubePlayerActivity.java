@@ -1,4 +1,4 @@
-package com.keyes.youtube;
+package com.booknara.youtube;
 
 import android.app.Activity;
 import android.app.AlertDialog;
@@ -28,6 +28,11 @@ import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.VideoView;
 import android.widget.LinearLayout.LayoutParams;
+
+import com.booknara.youtube.PlaylistId;
+import com.booknara.youtube.VideoId;
+import com.booknara.youtube.YouTubeId;
+import com.booknara.youtube.YouTubeUtility;
 
 /**
  * <p>Activity that will play a video from YouTube.  A specific video or the latest video in a YouTube playlist 
@@ -236,7 +241,7 @@ public class OpenYouTubePlayerActivity extends Activity {
 	    lLinLayout.setGravity(Gravity.CENTER);
 	    lLinLayout.setBackgroundColor(Color.BLACK);
 	    
-	    LayoutParams lLinLayoutParms = new LayoutParams(ViewGroup.LayoutParams.FILL_PARENT, ViewGroup.LayoutParams.FILL_PARENT);
+	    LayoutParams lLinLayoutParms = new LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.MATCH_PARENT);
 	    lLinLayout.setLayoutParams(lLinLayoutParms);
 	    
 	    this.setContentView(lLinLayout);
@@ -246,7 +251,7 @@ public class OpenYouTubePlayerActivity extends Activity {
 	    lRelLayout.setId(2);
 	    lRelLayout.setGravity(Gravity.CENTER);
 	    lRelLayout.setBackgroundColor(Color.BLACK);
-	    android.widget.RelativeLayout.LayoutParams lRelLayoutParms = new android.widget.RelativeLayout.LayoutParams(ViewGroup.LayoutParams.FILL_PARENT, ViewGroup.LayoutParams.FILL_PARENT);
+	    android.widget.RelativeLayout.LayoutParams lRelLayoutParms = new android.widget.RelativeLayout.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.MATCH_PARENT);
 	    lRelLayout.setLayoutParams(lRelLayoutParms);
 	    lLinLayout.addView(lRelLayout);
 	    

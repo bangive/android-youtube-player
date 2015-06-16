@@ -5,4 +5,6 @@
     <string name="youtubevideoid">YouTube Video ID</string>
     <string name="viewVideoButton">View Using OpenYouTubeActivity!</string>
     <string name="defaultYoutubeVideoId">tzgFuUu0oxg</string>
+
+    <string name="err_empty_video_id">Empty Video Id. Please input a valid Youtube Video Id</string>
 </resources>
