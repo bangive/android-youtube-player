@@ -1,15 +1,25 @@
 # Android Youtube Player
-***Android Youtube Player*** provides an easy way to play a Youtube video in your Android application.
+Android Youtube Player provides an easy way to play a Youtube video in your Android application.
 
-Setup
---------------------
+Usage
+-----
 TBA
 
 
-Example
---------------------
-TBA
-
+Download
+--------
+You can depend on the library through Maven:
+```xml
+<dependency>
+  <groupId>com.booknara</groupId>
+  <artifactId>android-youtube-player</artifactId>
+  <version>1.0.0</version>
+</dependency>
+```
+or Gradle:
+```groovy
+compile 'com.booknara:android-youtube-player:1.0.0@aar'
+```
 
 Acknowledgements
 --------------------
