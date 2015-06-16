@@ -10,13 +10,14 @@
     <uses-permission android:name="android.permission.INTERNET" />
 	<uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
 
-
 	<uses-sdk android:minSdkVersion="4" android:targetSdkVersion="22"/>
 	
-	
-    <application android:icon="@drawable/icon" android:label="@string/app_name">
-        <activity android:name=".SampleActivity"
-                  android:label="@string/app_name">
+    <application
+        android:icon="@drawable/icon"
+        android:label="@string/app_name">
+        <activity
+            android:name=".SampleActivity"
+            android:label="@string/app_name">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
@@ -24,18 +25,15 @@
         </activity>
         
         <!-- =============================================================== -->
-        <!-- This is what you'll need to include in your manifest to declare --> 
+        <!-- This is what you'll need to include in your manifest to declare -->
         <!-- the OpenYouTubeActivity in your project                         -->
         <!-- =============================================================== -->
-        <activity  
+        <activity
                 android:name="com.booknara.youtube.OpenYouTubePlayerActivity"
                 android:screenOrientation="landscape"
-                android:configChanges="orientation"
-                android:theme="@android:style/Theme.Black"
-                android:label="@string/app_name">  
+                android:configChanges="orientation" >
         </activity> 
 
     </application>
-    <uses-sdk android:minSdkVersion="4" />
 
 </manifest> 

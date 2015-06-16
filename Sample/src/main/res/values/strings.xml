@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="hello">Hello World, OpenYouTubeActivity!</string>
-    <string name="app_name">OpenYouTubeActivity</string>
-    <string name="youtubevideoid">YouTube Video ID</string>
-    <string name="viewVideoButton">View Using OpenYouTubeActivity!</string>
+
+    <string name="app_name">Youtube Player Demo</string>
+    <string name="youtube_video_id">YouTube Video ID</string>
+    <string name="open_youtube_video">Open Youtube Video</string>
     <string name="defaultYoutubeVideoId">tzgFuUu0oxg</string>
 
     <string name="err_empty_video_id">Empty Video Id. Please input a valid Youtube Video Id</string>
+
 </resources>

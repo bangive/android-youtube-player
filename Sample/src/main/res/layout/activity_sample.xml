@@ -8,12 +8,13 @@
         android:id="@+id/youtubeIdText"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
+        android:hint="@string/youtube_video_id"
         android:text="@string/defaultYoutubeVideoId"/>
 
     <Button
         android:id="@+id/viewVideoButton"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:text="@string/viewVideoButton"/>
+        android:text="@string/open_youtube_video"/>
 
 </LinearLayout>
