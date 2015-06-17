@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="fill_parent"
-    android:layout_height="fill_parent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
     android:orientation="vertical">
 
     <EditText
-        android:id="@+id/youtubeIdText"
-        android:layout_width="fill_parent"
+        android:id="@+id/youtube_video_id_text"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="@string/youtube_video_id"
-        android:text="@string/defaultYoutubeVideoId"/>
+        android:hint="@string/hint_youtube_video_id"
+        android:text="@string/default_youtube_video_id"/>
 
     <Button
-        android:id="@+id/viewVideoButton"
-        android:layout_width="fill_parent"
+        android:id="@+id/view_video_id_button"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/open_youtube_video"/>
 

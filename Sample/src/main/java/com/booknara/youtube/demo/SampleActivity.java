@@ -14,17 +14,19 @@ import com.booknara.youtube.OpenYouTubePlayerActivity;
 public class SampleActivity extends Activity {
     private static final String TAG = SampleActivity.class.getSimpleName();
 
+    private TextView videoIdTextView;
+    private Button viewVideoButton;
+
     @Override
     protected void onCreate(Bundle pSavedInstanceState) {
         super.onCreate(pSavedInstanceState);
 
         setContentView(R.layout.activity_sample);
 
-        final TextView videoIdTextView = (TextView) findViewById(R.id.youtubeIdText);
-        final Button viewVideoButton = (Button) findViewById(R.id.viewVideoButton);
+        videoIdTextView = (TextView) findViewById(R.id.youtube_video_id_text);
+        viewVideoButton = (Button) findViewById(R.id.view_video_id_button);
 
         viewVideoButton.setOnClickListener(new View.OnClickListener() {
-
             @Override
             public void onClick(View pV) {
 
@@ -35,12 +37,10 @@ public class SampleActivity extends Activity {
                     return;
                 }
 
-                Intent lVideoIntent = new Intent(null, Uri.parse("ytv://" + videoId), SampleActivity.this, OpenYouTubePlayerActivity.class);
-                startActivity(lVideoIntent);
+                Intent videoIntent = new Intent(null, Uri.parse("ytv://" + videoId), SampleActivity.this, OpenYouTubePlayerActivity.class);
+                startActivity(videoIntent);
             }
         });
 
     }
-
-
 }

@@ -2,10 +2,11 @@
 <resources>
 
     <string name="app_name">Youtube Player Demo</string>
-    <string name="youtube_video_id">YouTube Video ID</string>
-    <string name="open_youtube_video">Open Youtube Video</string>
-    <string name="defaultYoutubeVideoId">7V-fIGMDsmE</string>
 
-    <string name="err_empty_video_id">Empty Video Id. Please input a valid Youtube Video Id</string>
+    <string name="open_youtube_video">Open Youtube Video</string>
+    <string name="default_youtube_video_id">7V-fIGMDsmE</string>
+    <string name="hint_youtube_video_id">YouTube Video ID</string>
+
+    <string name="err_empty_video_id">Empty Id. Please input a valid Youtube Video/Playlist Id</string>
 
 </resources>
