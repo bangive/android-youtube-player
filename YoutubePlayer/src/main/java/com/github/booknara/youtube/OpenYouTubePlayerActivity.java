@@ -1,4 +1,4 @@
-package com.booknara.youtube;
+package com.github.booknara.youtube;
 
 import android.app.Activity;
 import android.app.AlertDialog;
@@ -28,11 +28,6 @@ import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.VideoView;
 import android.widget.LinearLayout.LayoutParams;
-
-import com.booknara.youtube.PlaylistId;
-import com.booknara.youtube.VideoId;
-import com.booknara.youtube.YouTubeId;
-import com.booknara.youtube.YouTubeUtility;
 
 /**
  * <p>Activity that will play a video from YouTube.  A specific video or the latest video in a YouTube playlist 

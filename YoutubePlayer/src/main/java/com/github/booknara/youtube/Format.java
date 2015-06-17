@@ -1,4 +1,4 @@
-package com.booknara.youtube;
+package com.github.booknara.youtube;
 
 /**
  * Represents a format in the "fmt_list" parameter 

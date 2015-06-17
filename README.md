@@ -6,7 +6,7 @@ Android Youtube Player provides an easy way to play a Youtube video in your Andr
 ### 1. Add OpenYouTubeActivity activity declaration in your AndroidManifest.xml
 ```xml
 <activity
-    android:name="com.booknara.youtube.OpenYouTubePlayerActivity"
+    android:name="com.github.booknara.youtube.OpenYouTubePlayerActivity"
     android:configChanges="orientation" >
 </activity>
 ```
@@ -28,14 +28,14 @@ startActivity(videoIntent);
 You can depend on the library through Maven:
 ```xml
 <dependency>
-  <groupId>com.booknara</groupId>
+  <groupId>com.github.booknara</groupId>
   <artifactId>android-youtube-player</artifactId>
   <version>1.0.0</version>
 </dependency>
 ```
 or Gradle:
 ```groovy
-compile 'com.booknara:android-youtube-player:1.0.0@aar'
+compile 'com.github.booknara:android-youtube-player:1.0.0@aar'
 ```
 
 ## Acknowledgements

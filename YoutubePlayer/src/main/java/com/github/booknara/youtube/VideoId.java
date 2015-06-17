@@ -1,10 +1,7 @@
 /**
  * 
  */
-package com.booknara.youtube;
-
-
-import com.booknara.youtube.YouTubeId;
+package com.github.booknara.youtube;
 
 public class VideoId extends YouTubeId {
 	public VideoId(String pId){

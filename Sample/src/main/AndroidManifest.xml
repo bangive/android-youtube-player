@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-      package="com.booknara.youtube.demo"
+      package="com.github.booknara.youtube.demo"
       android:versionCode="1"
       android:versionName="1.0">
       
@@ -29,7 +29,7 @@
         <!-- the OpenYouTubeActivity in your project                         -->
         <!-- =============================================================== -->
         <activity
-            android:name="com.booknara.youtube.OpenYouTubePlayerActivity"
+            android:name="com.github.booknara.youtube.OpenYouTubePlayerActivity"
             android:configChanges="orientation" >
         </activity>
 

@@ -1,4 +1,4 @@
-package com.booknara.youtube;
+package com.github.booknara.youtube;
 
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;

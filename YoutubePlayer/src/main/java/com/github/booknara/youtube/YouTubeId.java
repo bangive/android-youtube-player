@@ -1,7 +1,7 @@
 /**
  * 
  */
-package com.booknara.youtube;
+package com.github.booknara.youtube;
 
 public abstract class YouTubeId {
 	protected String mId;

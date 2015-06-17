@@ -1,4 +1,4 @@
-package com.booknara.youtube.demo;
+package com.github.booknara.youtube.demo;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -9,7 +9,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
-import com.booknara.youtube.OpenYouTubePlayerActivity;
+import com.github.booknara.youtube.OpenYouTubePlayerActivity;
 
 public class SampleActivity extends Activity {
     private static final String TAG = SampleActivity.class.getSimpleName();
