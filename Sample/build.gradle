@@ -1,7 +1,17 @@
+buildscript {
+    repositories {
+        mavenCentral()
+        maven { url 'https://oss.sonatype.org/content/repositories/snapshots' }
+    }
+}
+
 apply plugin: 'com.android.application'
 
 repositories {
     mavenCentral()
+    maven {
+        url "https://oss.sonatype.org/content/repositories/snapshots"
+    }
 }
 
 android {
@@ -34,6 +44,6 @@ android {
     }
 
     dependencies {
-        compile project(':YoutubePlayer')
+        compile 'com.github.booknara:android-youtube-player:1.0.0-SNAPSHOT@aar'
     }
 }
