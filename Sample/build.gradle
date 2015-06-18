@@ -9,7 +9,7 @@ android {
     buildToolsVersion "22.0.1"
 
     defaultConfig {
-        applicationId "com.booknara.youtube.demo"
+        applicationId "com.github.booknara.youtube.sample"
         minSdkVersion 4
         targetSdkVersion 22
         versionName "1.0"

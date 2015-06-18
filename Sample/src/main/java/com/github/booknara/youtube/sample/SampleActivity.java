@@ -1,4 +1,4 @@
-package com.github.booknara.youtube.demo;
+package com.github.booknara.youtube.sample;
 
 import android.app.Activity;
 import android.content.Intent;
