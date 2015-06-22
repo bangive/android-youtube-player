@@ -15,8 +15,13 @@ repositories {
 }
 
 android {
-    compileSdkVersion 13
+    compileSdkVersion 22
     buildToolsVersion "22.0.1"
+
+    packagingOptions {
+        exclude '.readme'
+        exclude 'META-INF/LICENSE.txt'
+    }
 
     defaultConfig {
         applicationId "com.github.booknara.youtube.sample"
@@ -26,6 +31,7 @@ android {
         versionCode 1
     }
 
+    //noinspection GroovyAssignabilityCheck
     buildTypes {
         debug {
             applicationIdSuffix ".debug"
@@ -44,6 +50,6 @@ android {
     }
 
     dependencies {
-        compile 'com.github.booknara:android-youtube-player:1.0.0-SNAPSHOT@aar'
+        compile 'com.github.booknara:android-youtube-player:1.0.0-SNAPSHOT'
     }
 }
