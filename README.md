@@ -35,7 +35,7 @@ You can depend on the library through Maven:
 ```
 or Gradle:
 ```groovy
-compile 'com.github.booknara:android-youtube-player:1.0.0@aar'
+compile 'com.github.booknara:android-youtube-player:1.0.0'
 ```
 
 ## Acknowledgements
